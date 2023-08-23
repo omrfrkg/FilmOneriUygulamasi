@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/id_yoneticiDuyuruEklemeSayfasi_fragment"
+        android:icon="@drawable/add_alert"
+        android:checked="true"
+        android:checkable="true"
+        android:title="Duyuru Yayınlama İşlemi">
+    </item>
+    <item
+        android:id="@+id/id_yoneticiDuyuruListelemeSayfasi_fragment"
+        android:icon="@drawable/ic_list"
+        android:checkable="true"
+        android:title="Yayınlanan Duyurular">
+    </item>
+
+    <item
+        android:id="@+id/id_yoneticiDuyuruIslemleri_fragment"
+        android:icon="@drawable/ic_announcement"
+        android:checkable="true"
+        android:title="Duyuru İşlemleri">
+    </item>
+
+    <item
+        android:id="@+id/id_yoneticiKullaniciListelemeSayfasi_fragment"
+        android:icon="@drawable/ic_person"
+        android:checkable="true"
+        android:title="Kullanıcı İşlemleri">
+    </item>
+
+    <item
+        android:id="@+id/id_yoneticiCikisYapSayfasi_fragment"
+        android:icon="@drawable/ic_exit"
+        android:checkable="true"
+        android:title="Çıkış Yap">
+    </item>
+
+
+</menu>

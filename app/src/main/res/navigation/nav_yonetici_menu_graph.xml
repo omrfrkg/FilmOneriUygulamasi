@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_yonetici_menu_graph"
+    app:startDestination="@id/id_yoneticiDuyuruEklemeSayfasi_fragment">
+
+    <fragment
+        android:id="@+id/id_yoneticiDuyuruEklemeSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.YoneticiDuyuruEkleFragment"
+        android:label="Duyuru Ekleme Sayfası"
+        tools:layout="@layout/fragment_yonetici_duyuru_ekle" />
+    <fragment
+        android:id="@+id/id_yoneticiCikisYapSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciCikisYapFragment"
+        android:label="Çıkış Yap"
+        tools:layout="@layout/fragment_kullanici_cikis_yap" />
+    <fragment
+        android:id="@+id/id_yoneticiKullaniciListelemeSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.YoneticiKullaniciListeleFragment"
+        android:label="Kullanıcı İşlemleri Sayfası"
+        tools:layout="@layout/fragment_yonetici_kullanici_listele" />
+    <fragment
+        android:id="@+id/id_yoneticiDuyuruListelemeSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.YoneticiDuyuruListeleFragment"
+        android:label="Yayınlanan Duyurular"
+        tools:layout="@layout/fragment_yonetici_duyuru_listele" />
+    <fragment
+        android:id="@+id/id_yoneticiDuyuruIslemleri_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.YoneticiDuyuruIslemleriFragment"
+        android:label="Duyuru İşlemleri"
+        tools:layout="@layout/fragment_yonetici_duyuru_islemleri" />
+    <fragment
+        android:id="@+id/id_yoneticiSifreSifirlama_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.YoneticiSifreSifirlamaFragment"
+        android:label="Şifre Sıfırlama Talepleri"
+        tools:layout="@layout/fragment_yonetici_sifre_sifirlama" />
+</navigation>

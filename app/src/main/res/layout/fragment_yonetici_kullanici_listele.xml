@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragments.YoneticiKullaniciListeleFragment">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Uygulamaya Kayıtlı Kullanıcılar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:text="İşlem Yapılacak Kullanıcının ID'sini Seçiniz :" />
+
+            <Spinner
+                android:id="@+id/sKullaniciId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kayıtlı Kullanıcının Kullanıcı Adı :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="127dp" />
+
+            <TextView
+                android:id="@+id/tvKullaniciAdiYonetici"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcı Adı Gelicek."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="171dp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kayıtlı Kullanıcının Adı ve Soyadı :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <TextView
+                android:id="@+id/tvAdiSoyadiYonetici"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcının Adı ve Soyadı Gelicek."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="267dp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kayıtlı Kullanıcının Mail Adresi :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="314dp" />
+
+            <TextView
+                android:id="@+id/tvMailYonetici"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcının Mail Adresi Gelicek."
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="361dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kayıtlı Kullanıcının Telefon Numarası :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="407dp" />
+
+            <TextView
+                android:id="@+id/tvTelefonYonetici"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcının Telefon Numarası Gelicek."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="454dp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Kayıtlı Kullanıcının Şifresi :"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="524dp" />
+
+            <TextView
+                android:id="@+id/tvSifreYonetici"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="Kullanıcının Şifresi Buraya Gelicek."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="571dp" />
+
+            <Button
+                android:id="@+id/btnKullaniciHesabiniSil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Kullanıcının Hesabını Sil" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

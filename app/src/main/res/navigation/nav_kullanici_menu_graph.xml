@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_kullanici_menu_graph"
+    app:startDestination="@id/id_kullaniciAnasayfa_fragment">
+
+    <fragment
+        android:id="@+id/id_kullaniciAnasayfa_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciAnasayfaFragment"
+        android:label="Ne İzlesem ?"
+        tools:layout="@layout/fragment_kullanici_anasayfa" />
+    <fragment
+        android:id="@+id/id_kullaniciFavori_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciFavoriFragment"
+        android:label="Favori Sayfası"
+        tools:layout="@layout/fragment_kullanici_favori" />
+    <fragment
+        android:id="@+id/id_kullaniciAyar_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciAyarFragment"
+        android:label="Ayar Sayfası"
+        tools:layout="@layout/fragment_kullanici_ayar" />
+    <fragment
+        android:id="@+id/id_kullaniciCikisYap_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciCikisYapFragment"
+        android:label="Çıkış Yapma Sayfası"
+        tools:layout="@layout/fragment_kullanici_cikis_yap" />
+    <fragment
+        android:id="@+id/id_kullaniciFilmOneriAyarSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.KullaniciFilmOneriAlgoritmasiFragment"
+        android:label="Film Öneri Ayar Sayfası"
+        tools:layout="@layout/fragment_kullanici_film_oneri_algoritmasi" />
+    <fragment
+        android:id="@+id/id_duyuruSayfasi_fragment"
+        android:name="com.omrfrkg.mobilfilmoneriuygulamasi.Fragments.DuyuruFragment"
+        android:label="Günün Duyurusu"
+        tools:layout="@layout/fragment_duyuru" />
+</navigation>
